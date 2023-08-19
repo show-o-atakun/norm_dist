@@ -149,4 +149,7 @@ module NormDist
     left = chi_inv_l(f, p, min: 0, step: step)
     return [right, left]
   end
+
+  module_function :normal_pdf_calc, :normal_cdf_calc, :normal_pdf, :normal_cdf, \
+   :estimate, :t_inv_r, :t_inv_l, :t_inv, :chi_inv_r, :chi_inv_l, :chi_inv
 end
